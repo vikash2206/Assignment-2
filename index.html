@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section id="calculator">
+        <div id="calc" class="format"></div>
+        <div id="results" class="format">0</div>
+        <div id="buttons">
+            <div id="line">
+                <button id="clear" class="btn grey" onclick="clr()">C</button>
+                <button id="unsigned" class="btn grey" onclick="changeSignal()">+/-</button>
+                <button id="pct" class="btn grey" onclick="uniqueStr('*0.01')">%</button>
+                <button id="/" class="btn blue" onclick="mathOperations(this.id)">÷</button>
+            </div>
+            <div id="line">
+                <button id="7" class="btn grey" onclick="numbers(this.id)">7</button>
+                <button id="8" class="btn grey" onclick="numbers(this.id)">8</button>
+                <button id="9" class="btn grey" onclick="numbers(this.id)">9</button>
+                <button id="*" class="btn blue" onclick="mathOperations(this.id)">ˣ</button>
+            </div>
+            <div id="line">
+                <button id="4" class="btn grey" onclick="numbers(this.id)">4</button>
+                <button id="5" class="btn grey" onclick="numbers(this.id)">5</button>
+                <button id="6" class="btn grey" onclick="numbers(this.id)">6</button>
+                <button id="-" class="btn blue" onclick="mathOperations(this.id)">-</button>
+            </div>
+            <div id="line">
+                <button id="1" class="btn grey" onclick="numbers(this.id)">1</button>
+                <button id="2" class="btn grey" onclick="numbers(this.id)">2</button>
+                <button id="3" class="btn grey" onclick="numbers(this.id)">3</button>
+                <button id="+" class="btn blue" onclick="mathOperations(this.id)">+</button>
+            </div>
+            <div id="line">
+                <button id="0" class="btn grey" onclick="numbers(this.id)">0</button>
+                <button id="." class="btn grey" onclick="unique(this.id)">.</button>
+                <button id="del" class="btn grey" onclick="dlt()">del</button>
+                <button id="equals" class="btn orange" onclick="displayEquals()">=</button>
+            </div>
+        </div>
+
+        <!-- <div class="local1" id="local2">
+            <p>History</p>
+            <p id="local"></p>
+        </div> -->
+
+        
+    </section>
+
+    
+</body>
+
+</html>
